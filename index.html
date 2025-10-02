@@ -3,12 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gridy</title>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    
 </head>
-<body>
-    <div class="grid">
-        <div>text</div>
-        <div>text</div>
+  <body>
+    <nav>
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="Home">
+      <div class="Home-container">
+        <div class="Home-text">
+          <h1 style="color: #FFDAB9;">Welcome to My Portfolio</h1>
+          <p style="font-size: 25px; color: antiquewhite; margin-top: -15px;">
+            Hi, I'm <span class="typed"></span> This is my portfolio website.
+          </p>
     </div>
-</body>
+    <div class="Home-img">
+      <img src="https://cdn.discordapp.com/avatars/974206310058967060/a9d4d9197f5a37219f1a21fbc0b0e70d.png?size=1024" 
+           alt="Profile Avatar">
+    </div>
+  </div>
+</section>
+
+    <section id="about">
+      <p></p>
+      <br>
+        <h2 style="color: #FFDAB9;">🙋‍♂️ About Me</h2>
+       <p style="color: antiquewhite;">
+        Hi, I’m Hazel Vinceznel! I’m a hobbyist coder who enjoys building projects and tinkering with tech, from experimenting with Arduino and ESP32 boards to wiring up breadboards and running my own self-hosted server. For me, coding is more than just a skill; it’s a way to explore ideas and turn curiosity into something real.  
+        People often see me as a relaxed guy who is passionate about informatics and always excited to jump into the next project. I can speak both English and Indonesian, which lets me connect with more people who share similar passions. My goal is simple: keep learning, keep creating, and have fun along the way, whether that’s through coding, gaming, or exploring new tech.
+       </p>
+
+        <p style="color: antiquewhite;">I mainly work with these languages:</p>
+        <div class="center" align-items="center" style="display: flex; gap: 20px; margin-top: 20px;">
+          <img src="html.png" alt="html_logo" width="180" height="180">
+          <img src="css.png" alt="css_logo" width="210" height="210">
+          <img src="python.png" alt="py_logo" width="360" height="200">
+        </div>
+    </section>
+
+    <section id="education" style="color: antiquewhite; padding: 40px;">
+      <p></p>
+      <br>
+      <br>
+      <h2 style="font-size: 28px; margin-bottom: 40px; text-align:center;">🎓 Education & Learning</h2>
+      <div class="timeline">
+      <div class="timeline-item left">
+        <div class="timeline-date">2023 - Present</div>
+        <div class="timeline-content">
+          <h3>Self-Taught Learning</h3>
+          <p>Focusing on coding, electronics, and self-hosted servers. Learning Python, HTML, and CSS while building projects and experimenting with Arduino and ESP32 boards.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item right">
+        <div class="timeline-date">2021 - 2022</div>
+        <div class="timeline-content">
+          <h3>High School Years</h3>
+          <p>Developed a strong interest in STEM subjects. Started tinkering with small electronics and coding experiments outside of class.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item left">
+        <div class="timeline-date">2020 - 2021</div>
+        <div class="timeline-content">
+          <h3>Early Tech Curiosity</h3>
+          <p>Began exploring technology through gaming, problem-solving, and discovering how computers and electronics work.</p>
+        </div>
+      </div>
+
+  </div>
+    </section>
+
+    <section id="projects">
+      <p></p>
+      <br>
+        <h2 style="color: #FFDAB9;">🗂️ My Projects</h2>
+        <p style="color: antiquewhite; margin-top: -17px;">Here are some of the projects I've worked on:</p>
+          <div class="projects-section">
+            <div class="project-card">
+              <h3>saturn</h3>
+              <p>A custom Discord bot that manages servers, automates tasks, and adds fun interactive commands.</p>
+            </div>
+            <div class="project-card">
+              <h3>Arduino CS2 Bomb Project</h3>
+              <p>A replica of the CS2 bomb built with Arduino, featuring a keypad, countdown timer, and LEDs.</p>
+            </div>
+          </div>
+    </section>
+
+    <section id="contact">
+      <br>
+      <br>
+        <h2 style="color: #FFDAB9;">📩 Contact Me!</h2>
+        <p style="color: antiquewhite; margin-top: -30px;">Feel free to reach out for collaborations or just to say hi!</p>
+          <div class="contact-info" style="color: antiquewhite;">
+            <p style="font-size: larger;">name:</p>
+            <div style="padding-left: 45px; margin-top: -13px; padding-bottom: 15px;"><input type="text" style="background: none; border: none; color: antiquewhite; font-size: 16px; width: 100%; max-width: 400px; border-color: black; border-radius: 8px; padding: 10px; border: 2px solid #555;"></div>
+            <p style="font-size: larger;">email:</p>
+            <div style="padding-left: 45px; margin-top: -13px; padding-bottom: 15px;"><input type="email" style="background: none; border: none; color: antiquewhite; font-size: 16px; width: 100%; max-width: 400px; border-color: black; border-radius: 8px; padding: 10px; border: 2px solid #555;"></div>
+            <p style="font-size: larger;">messege:</p>
+            <div style="padding-left: 45px; margin-top: -13px; padding-bottom: 15px;"><textarea style="background: none; border: none; color: antiquewhite; font-size: 16px; width: 100%; max-width: 400px; height: 150px; border-color: black; border-radius: 8px; padding: 10px; border: 2px solid #555;"></textarea></div>
+          </div>
+    </section>
+    <footer>
+      <div class="footer">
+        <p style="margin-bottom: -5px;">&copy; 2025 Hazel Vinceznel. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed('.typed', {
+        strings: ["Hazel Vinceznel"],
+        typeSpeed: 200,
+        backSpeed: 25,
+        loop: true,
+      });
+    </script>
+  </body>
 </html>
