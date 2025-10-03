@@ -13,7 +13,37 @@ body {
     color: antiquewhite;
 }
 
+.icon {
+    width: 80px;
+    margin: 0 15px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: grayscale(100%) brightness(70%);
+    cursor: pointer;
+}
+
+.icon:hover {
+    filter: none;
+    transform: scale(1.1);
+}
+
 /* Navigation */
+
+    .wave {
+      display: inline-block;
+      animation: wave 2s infinite;
+      transform-origin: 70% 70%; /* pivot point for the wave */
+    }
+
+    @keyframes wave {
+      0%   { transform: rotate(0deg); }
+      10%  { transform: rotate(14deg); }
+      20%  { transform: rotate(-8deg); }
+      30%  { transform: rotate(14deg); }
+      40%  { transform: rotate(-4deg); }
+      50%  { transform: rotate(10deg); }
+      60%  { transform: rotate(0deg); }
+      100% { transform: rotate(0deg); }
+    }
 .navbar {
     position: fixed;
     width: 100%;
@@ -238,6 +268,18 @@ p {
     .nav-links {
         display: flex !important;
     }
+    .icon {
+        width: 70px;
+        margin: 0 10px;
+    }
+
+    .skill-card {
+        padding: 15px;
+    }
+
+    .center {
+        gap: 15px;
+    }
 }
 @media screen and (min-width: 1025px) {
     .nav-links {
@@ -254,6 +296,18 @@ p {
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     .navbar {
         padding: 1rem 2rem;
+    }
+    .icon {
+        width: 70px;
+        margin: 0 10px;
+    }
+
+    .skill-card {
+        padding: 15px;
+    }
+
+    .center {
+        gap: 15px;
     }
 
     .logo {
@@ -289,7 +343,26 @@ p {
 
 @media screen and (max-width: 768px) {
     .logo {
-        display: none; /* Hide logo on mobile */
+        padding-left: 20px;
+    }
+    .icon {
+        width: 60px;
+        margin: 0 8px;
+    }
+
+    .skill-card {
+        padding: 10px;
+    }
+
+    .center {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .skill-icon p {
+        font-size: 0.9rem;
+        margin-top: -40px !important;
     }
 
     .hamburger {
@@ -355,6 +428,11 @@ p {
         width: 150px;
         height: auto;
     }
+
+    .icon {
+        width: 60px;
+        margin: 0 10px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -377,4 +455,22 @@ p {
     .contact-info div {
         padding-left: 20px;
     }
+        .icon {
+        width: 50px;
+        margin: 0 5px;
+    }
+
+    .skill-icon p {
+        font-size: 0.8rem;
+        margin-top: -35px !important;
+    }
+
+    .skill-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .center {
+        gap: 8px;
+    }
 }
+
