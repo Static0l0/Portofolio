@@ -18,11 +18,12 @@
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
-    <div class="hamburger" id="hamburger" style="margin-top: -14px;">☰</div>
+    <div class="hamburger" id="hamburger">☰</div>
 </nav>
 
 
     <section id="Home">
+    <div id="particles-js" class="sigma" style="position: absolute; width: 100%; height: 100%; z-index: 0; pointer-events: auto;"></div>
       <div class="Home-container">
         <div class="Home-text">
           <h1 style="color: #FFDAB9;">Welcome to My Portfolio <img class="wave" alt="👋" draggable="false" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f44b.png" style="height: 1em; width: 1em;"></h1>
@@ -31,7 +32,7 @@
           </p>
     </div>
     <div class="Home-img">
-      <img src="https://cdn.discordapp.com/avatars/974206310058967060/a9d4d9197f5a37219f1a21fbc0b0e70d.png?size=1024" alt="Profile Avatar" draggable="false">
+      <img src="https://cdn.discordapp.com/avatars/974206310058967060/a9d4d9197f5a37219f1a21fbc0b0e70d.png?size=1024" alt="Profile Avatar" draggable="false" style="position: relative; top: 0; bottom: 0;">
     </div>
   </div>
 </section>
@@ -88,14 +89,27 @@
                   <p class="center" style="margin-top: -50px;">Linux</p>
                  </div>
                 <div class="skill-icon">
-                  <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
-                  <p class="center" style="margin-top: -50px;">Git</p>
-                </div>
-                <div class="skill-icon">
                   <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
                   <p class="center" style="margin-top: -50px;">GitHub</p>
                 </div>
+                <div class="skill-icon">
+                  <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-original.svg" alt="netlify">
+                  <p class="center" style="margin-top: -50px;">netlify</p>
+                </div>
+                <div class="skill-icon">
+                  <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/blender/blender-original.svg" alt="blender">
+                  <p class="center" style="margin-top: -50px;">blender</p>
+                </div>
+                <div class="skill-icon">
+                  <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecolab/googlecolab-original.svg" alt="googlecolab">
+                  <p class="center" style="margin-top: -50px;">googlecolab</p>
+                </div>
+                <div class="skill-icon">
+                  <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cloudflare/cloudflare-original.svg" alt="cloudflare">
+                  <p class="center" style="margin-top: -50px;">cloudflare</p>
+                </div>
               </div>
+              
     </section>
 
     <section id="education" style="color: antiquewhite; padding: 40px;">
@@ -141,6 +155,11 @@
               <p>A custom Discord bot that manages servers, automates tasks, and adds fun interactive commands.</p>
             </div>
             <div class="project-card">
+              <h3>auto-clicker</h3>
+              <p>A very simple and basic auto-clicker</p>
+            </div>
+          </div>
+            <div class="project-card">
               <h3>Arduino CS2 Bomb Project</h3>
               <p>A replica of the CS2 bomb built with Arduino, featuring a keypad, countdown timer, and LEDs.</p>
             </div>
@@ -168,6 +187,7 @@
       </div>
     </footer>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
       var typed = new Typed('.typed', {
         strings: ["Hazel Vincenzel"],
@@ -181,6 +201,9 @@
       hamburger.addEventListener('click', () => {
       navLinks.classList.toggle('active');
     });
+
+    particlesJS("particles-js", {"particles":{"number":{"value":80,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function() { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
+
     </script>
   </body>
 </html>

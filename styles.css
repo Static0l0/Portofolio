@@ -26,6 +26,14 @@ body {
     transform: scale(1.1);
 }
 
+.sigma {
+    height: 200px; /* Set a fixed height for the container */
+    position: relative; /* Essential for positioning the mask */
+  
+  /* Apply the mask-image for the fade effect */
+    -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+}
 /* Navigation */
 
     .wave {
